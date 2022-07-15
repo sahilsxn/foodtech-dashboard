@@ -7,17 +7,17 @@ function OrdersTable(props){
         <div className="col-md-6">
         <table className="table table-striped">
             <thead>
-                <tr>
-                    <th> No. of Orders </th>
-                    <th> Count of Customers</th>
+                <tr style={{borderBottom:'2.5px solid #393C3E'}}>
+                    <th className="text-light"> No. of Orders </th>
+                    <th className="text-light"> Count of Customers</th>
                 </tr>
             </thead>
             <tbody>
                 {Object.keys(data).map((ele, i)=>{
                     return (
-                        <tr key={i}>
-                            <td>{ele}</td>
-                            <td>{data[ele]}</td>
+                        <tr key={i} style={{borderBottom:'#393C3E'}}>
+                            <td className="text-light">{ele}</td>
+                            <td className="text-light">{data[ele]}</td>
                         </tr>
                     )
                 })}

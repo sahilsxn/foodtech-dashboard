@@ -19,13 +19,15 @@ function OrdersChart(props){
     function drawChart(){
 
         const data = google.visualization.arrayToDataTable(chartData);
-        
 
         const options = {
         title: 'Orders Distribution',
+        titleTextStyle: {color: 'white', opacity:'0.9'},
+        legend: {textStyle: {color: 'white'}},
         fontSize: 15,
         is3D: true,
-        backgroundColor: { fill: "#F4F4F4" },
+        backgroundColor: { fill: "#212426" },
+
         };
 
         const chart = new google.visualization.PieChart(document.getElementById('piechart'));
@@ -34,8 +36,8 @@ function OrdersChart(props){
     }
 
     return (
-        <div className="col-md-6">
-            <div id="piechart" style={{width:'520px', height:'280px'}}>
+        <div className="col-md-6" style={{display:'flex', justifyContent:'center'}}>
+            <div id="piechart" style={{width:'360px', height:'280px'}}>
             </div>
         </div>
     )

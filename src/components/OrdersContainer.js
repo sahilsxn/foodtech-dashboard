@@ -25,8 +25,8 @@ function OrdersContainer(props){
     }
 
     return (
-        <div className="row mt-5 pt-3 pb-0 p-lg-3" style={{borderRadius: '24px', background:'#F4F4F4'}}>
-            <h2>Orders Distribution</h2>
+        <div className="row m-5 p-lg-3 pt-lg-4" style={{borderRadius: '24px', background:'#212426'}}>
+            <h2 className="text-light">Orders Distribution</h2>
             <OrdersTable data={customerFrequency()}/>
             <OrdersChart data={customerFrequency()}/>
         </div>

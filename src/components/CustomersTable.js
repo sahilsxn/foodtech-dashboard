@@ -1,4 +1,5 @@
 import React from 'react'
+import '../button.css'
 
 function CustomersTable(props){
 
@@ -8,23 +9,22 @@ function CustomersTable(props){
         <div >
             <table className="table table-hover">
             <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Phone</th>
-                    <th>Show</th>
+                <tr style={{borderBottom:'2.5px solid #393C3E'}}>
+                    <th className="text-light">Name</th>
+                    <th className="text-light">Phone</th>
+                    <th className="text-light">Show Customer</th>
                 </tr>
             </thead>
             <tbody>
                     {customers.map(customer=>{
                         return (
-                            <tr key={customer.Phone}>
-                                <td>{customer.Name}</td>
-                                <td>{customer.Phone}</td>
-                                <td> 
-                                    <button className="btn btn-primary"
-                                    style={{borderRadius: '20px'}} 
+                            <tr key={customer.Phone} style={{borderBottom:'#393C3E', alignContent:'center'}}>
+                                <td className="text-light">{customer.Name}</td>
+                                <td className="text-light">{customer.Phone}</td>
+                                <td className="text-light"> 
+                                    <button className="btn"
                                     onClick={()=>{showDetails(customer)}}>
-                                    Show
+                                    Show Details
                                     </button> 
                                 </td>
                             </tr>

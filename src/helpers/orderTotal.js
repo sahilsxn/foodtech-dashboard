@@ -3,7 +3,7 @@ const orderTotal = (customers) =>{
     for (let cust of customers) {
         sum += cust.Amount
     }
-    return sum
+    return `₹ ${sum}`
 }
 
 export default orderTotal

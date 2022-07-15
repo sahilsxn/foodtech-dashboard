@@ -1,0 +1,21 @@
+*{margin:0; padding:0; box-sizing:'border-box'}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 32px;
+    background: -webkit-radial-gradient(left top, rgb(154, 84, 235), rgb(97, 42, 211));
+}
+
+.illustration{
+    height: 160px;
+    width: 160px;
+}
+
+.col{
+    background-color:#16191B;
+    width: 100vw;
+    margin: 0px;
+    padding-bottom: 48px;
+}

@@ -35,9 +35,9 @@ function CustomersContainer(props){
     }
 
     return (
-        <div className="row pt-3 p-lg-3 pb-0" style={{borderRadius: '24px', background:'#F4F4F4'}}>
+        <div className="row p-lg-3 pt-lg-4 m-5 text-light" style={{borderRadius: '24px', background:'#212426'}}>
             <div className="col-md-8">
-                <h2>Unique Customers - {onlyUniqueCustomers.length}</h2>
+                <h2 className="text-light">Unique Customers - {onlyUniqueCustomers.length}</h2>
             </div>
             <div className="col-md-4">
                 <Search term={term} handleChange={handleChange}/>
