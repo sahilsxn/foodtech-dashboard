@@ -14,7 +14,7 @@ function App(props){
       <div className="col">
           <div className='header'>
             <h1 className="text-light"> Customer Analytics Dashboard </h1>
-            <img className='illustration' src="https://images.prismic.io/cred/351ece27-b59a-47ef-8519-11c733ca351a_credit-score-meter.png?auto=format&w=550"/>
+            <img className='illustration' alt="" src="https://images.prismic.io/cred/351ece27-b59a-47ef-8519-11c733ca351a_credit-score-meter.png?auto=format&w=550"/>
           </div>
           <h2 className="text-light mt-5" style={{marginLeft:'64px'}}> Order Insights </h2>
           <StatsContainer customers={customers}/>
